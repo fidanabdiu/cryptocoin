@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestSolution.Api</name>
+    </assembly>
+    <members>
+        <member name="M:TestSolution.Api.Controllers.MainController.Register(TestSolution.Api.Models.RegisterModel)">
+            <summary>
+            POST
+            </summary>
+            <param name="model"></param>
+            <response code="200">Returns the successful response</response>
+            <response code="400">If the request is not valid</response>        
+            <response code="500">If there is an internal server error</response>
+        </member>
+        <member name="M:TestSolution.Api.Controllers.MainController.Authenticate(TestSolution.Api.Models.LoginRequestModel)">
+            <summary>
+            POST
+            </summary>
+            <param name="model"></param>
+            <response code="200">Returns the response model</response>
+            <response code="400">If the request is not valid</response>        
+            <response code="500">If there is an internal server error</response>
+        </member>
+        <member name="M:TestSolution.Api.Controllers.MainController.CryptoCoinList">
+            <summary>
+            GET
+            </summary>
+            <response code="200">Returns the list of crypto coins</response>        
+            <response code="400">If the request is not valid</response>
+            <response code="401">If the user is not authenticated or authorized</response>
+            <response code="500">If there is an internal server error</response>        
+        </member>
+        <member name="M:TestSolution.Api.Controllers.MainController.CryptoCoinMarkUnmark(System.String,System.Boolean)">
+            <summary>
+            GET
+            </summary>
+            <param name="id"></param>
+            <param name="mark"></param>        
+            <response code="200">Returns the successful response</response>        
+            <response code="400">If the request is not valid</response>
+            <response code="401">If the user is not authenticated or authorized</response>
+            <response code="500">If there is an internal server error</response>        
+        </member>
+        <member name="M:TestSolution.Api.Controllers.MainController.CryptoCoinListByUser">
+            <summary>
+            GET
+            </summary>
+            <response code="200">Returns the list of user crypto coins</response>        
+            <response code="400">If the request is not valid</response>
+            <response code="401">If the user is not authenticated or authorized</response>
+            <response code="500">If there is an internal server error</response>        
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:TestSolution.Api.Data.Initializer" -->
+        <!-- Badly formed XML comment ignored for member "M:TestSolution.Api.Data.Initializer.Initialize(System.IServiceProvider)" -->
+        <member name="T:TestSolution.Api.Data.Datum">
+            <summary>
+            https://json2csharp.com/
+            </summary>
+        </member>
+        <member name="T:TestSolution.Api.Data.Root">
+            <summary>
+            https://json2csharp.com/
+            </summary>
+        </member>
+        <member name="T:TestSolution.Api.Helpers.Utilities">
+            <summary>
+            Utilities
+            </summary>
+        </member>
+        <member name="M:TestSolution.Api.Helpers.Utilities.GetSHA256(System.String)">
+            <summary>
+            GetSHA256
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:TestSolution.Api.Program.Main(System.String[])" -->
+    </members>
+</doc>
